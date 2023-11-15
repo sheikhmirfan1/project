@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 150px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.main-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+}
+.nav-link {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 80% auto;
+   text-align: center;
+    
+}
+
+.hero::before {    
+      content: "";
+      background-image:url(/image/chilli.avif);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.6;
+        z-index: -1;
+}
+
+.hero-text {
+  position: relative;
+  color: #222;  
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.btn{
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color: rgb(133, 73, 245);
+    color: #fff;
+}
+ul{
+    list-style: none;
+
+}
+.hero-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.menu-card {
+    border-radius: 2px;
+    box-shadow: rgba(18, 132, 246, 0.2);
+    position: relative;
+
+    
+}
+.menu-card:hover{
+border: 1px solid #000;
+  box-shadow: rgba(18, 132, 246, 0.2);
+
+}
+.menu-item-name{
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    
+}

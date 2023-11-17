@@ -217,11 +217,6 @@ ul {
 h3 {
   color: #fff;
 }
-.bi {
-  display: block;
-  font-size: 34px;
-  color: #fff;
-}
 .fa-solid{
   font-size: 30px;
   color: #fff;
@@ -229,4 +224,51 @@ h3 {
 .fa-solid:hover{
   background-color: blueviolet;
   color: #fff;
+}
+.book{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.booking-1{
+  width: 80%;
+  margin: 0 auto;
+  height: 50vh;
+  background-color:#fff;
+  padding: 20px;
+  box-shadow: #959292 0px 0px 5px;
+}
+.booking{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+input{
+  /* height: 100px; */
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+select,.form-select{
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 30px;
+  
+}
+textarea{ 
+  margin-top: 35px;
+  font-size: 18px;
+  padding: 8px 8px;
+  width: 900px;
+  height: 200px;
+  
+}
+.btn-1{
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 20px 50px;
+  background-color: gold;
+  font-weight: 800;
+  border: none;
 }

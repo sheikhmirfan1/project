@@ -4,7 +4,9 @@
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: "Roboto Mono", 'Space Grotesk',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto Mono", "Space Grotesk", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 .logo {
   width: 150px;
@@ -14,10 +16,15 @@ body {
   align-items: center;
 }
 .main-logo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(245, 245, 245);
+  z-index: 9999;
 }
 .nav-link {
   width: 50%;
@@ -35,13 +42,14 @@ li {
   height: 90vh;
   width: 80% auto;
   text-align: center;
+  margin-top: 100px;
 }
 
 .hero::before {
   content: "";
   background-image: url(/image/chilli.avif);
   background-size: cover;
-  
+
   position: absolute;
   top: 0px;
   right: 0px;
@@ -55,7 +63,6 @@ li {
   position: relative;
   color: #222;
   text-align: center;
-  
 }
 h1 {
   font-size: 3rem;
@@ -116,9 +123,8 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0px 10px 0px 10px;
-  
 }
-h4{
+h4 {
   font-weight: bold;
 }
 .menu-list {
@@ -222,129 +228,127 @@ h4{
 h3 {
   color: #fff;
 }
-.fa-solid{
+.fa-solid {
   font-size: 30px;
   color: #fff;
 }
-.fa-solid:hover{
+.fa-solid:hover {
   background-color: blueviolet;
   color: #fff;
 }
-.book{
+.book {
   font-size: 3rem;
   text-align: center;
 }
 
-.booking-1{
+.booking-1 {
   width: 90%;
   margin: 0 auto;
-  height: 60vh;
-  background-color:#fff;
+  height: 50vh;
+  background-color: #fff;
   padding: 20px;
   box-shadow: #959292 0px 0px 5px;
 }
-.booking{
+.booking {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 
-input{
+input {
   /* height: 100px; */
-  margin-top: 30px;
   font-size: 18px;
   padding: 10px 30px;
 }
-select,.form-select{
-  margin-top: 10px;
+select,
+.form-select {
   font-size: 20px;
   padding: 10px 30px;
-  
 }
-textarea{ 
-  margin-top: 35px;
+textarea {
+  margin-top: 45px;
   font-size: 18px;
   padding: 8px 8px;
-  width: 900px;
+  width: 800px;
   height: 200px;
-  
 }
-.btn-1{
-  margin-top: 25px;
+.btn-1 {
+  margin-top: 30px;
   border-radius: 5px;
   padding: 20px 50px;
   background-color: gold;
   font-weight: 800;
   border: none;
 }
-.footer-main{
-    background-color: #000;
-    width: 100%;
-    margin: 0 auto;
-    height: 60%;
+.footer-main {
+  background-color: #000;
+  width: 100%;
+  margin: 0 auto;
+  height: 45vh;
 }
-.footer-logo{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 200px;
-
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
 }
-.footer{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    list-style-type: none;
-    margin-left: 30px;
-
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+  margin-left: 20px;
 }
 
-.footer-links{
-    
-    /* height: 300px; */
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    
+.footer-links {
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+  margin-top: 50px;
 }
-h5{
-    margin-left: 35px;
-    
+h5 {
+  margin-left: 35px;
 }
 
-.footer-links a{
-    color: #e5e5e5;
-    
+.footer-links a {
+  color: #e5e5e5;
 }
-li{
-    margin: 15px 0 0 0;
-    color: #e5e5e5;
-}
-
-.footer-social{
-   
-    margin-left:10%;
-     display: flex;
-     flex-direction: row;
-      justify-content: space-evenly; 
-      align-items: center;
-      text-align: center;
-     color: #ffffff;
-   
+li {
+  margin: 15px 0 0 0;
+  color: #e5e5e5;
 }
 
-
-.fa-brands{
-   
-     color: #ffffff;
-     padding-right: 20px;
-    
+.footer-social {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
-.Impressum{
+
+.fa-brands {
+  color: #ffffff;
+  padding-right: 20px;
+}
+.Impressum {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+@media (min-width: 0px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
 }

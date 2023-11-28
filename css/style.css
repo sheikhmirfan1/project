@@ -39,7 +39,7 @@ li {
 }
 .hero {
   position: relative;
-  height: 90vh;
+
   width: 80% auto;
   text-align: center;
   margin-top: 100px;
@@ -118,7 +118,6 @@ ul {
 .container-main {
   width: 80%;
   margin: 0 auto;
-  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -224,6 +223,9 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+.menu-list,.menu-list-1,.menu-list-2,.menu-list-3,.menu-list-4,.menu-list-5 {
+    margin: 10px;
+  }
 
 h3 {
   color: #fff;
@@ -242,9 +244,8 @@ h3 {
 }
 
 .booking-1 {
-  width: 100%;
+  /* width: 80%; */
   margin: 0 auto;
-  height: 50vh;
   background-color: #fff;
   padding: 20px;
   box-shadow: #959292 0px 0px 5px;
@@ -269,7 +270,7 @@ textarea {
   margin-top: 45px;
   font-size: 18px;
   padding: 8px 8px;
-  width: 800px;
+  width: 90%;
   height: 200px;
 }
 .btn-1 {
@@ -284,13 +285,13 @@ textarea {
   background-color: #000;
   width: 100%;
   margin: 0 auto;
-  height: 45vh;
+  
 }
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 200px;
+  justify-content: space-around;
+  
 }
 .footer {
   margin-top: 100px;
@@ -307,7 +308,7 @@ textarea {
   flex-direction: column;
   padding: 20px;
   text-align: left;
-  margin-top: 50px;
+
 }
 h5 {
   margin-left: 35px;
@@ -341,18 +342,41 @@ li {
   color: gray;
 }
 
-@media (min-width: 0px) {
+@media (max-width: 992px) {
+  .nav-link {
+    display: none;
+  }
 
-}
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
+  .menu-card {
+    display: none;
+  }
   
+
+  .booking-1 {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: #959292 0px 0px 5px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .booking {
+    flex-direction: column;
+  }
+  .footer-main {
+    background-color: #000;
+  }
+  textarea {
+    margin-top: 45px;
+    font-size: 14px;
+    padding: 8px 8px;
+    height: 150px;
+    width: 100%;
+  }
 }
-
-@media (min-width: 992px) {}
-
-

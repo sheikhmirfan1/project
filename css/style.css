@@ -9,7 +9,8 @@ body {
     "Open Sans", "Helvetica Neue", sans-serif;
 }
 .logo {
-  width: 150px;
+  width: 130px;
+  
 }
 .icon {
   display: flex;
@@ -27,7 +28,7 @@ body {
   z-index: 9999;
 }
 .nav-link {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -259,17 +260,17 @@ h3 {
 input {
   /* height: 100px; */
   font-size: 18px;
-  padding: 10px 30px;
+  padding: 8px ;
 }
 select,
 .form-select {
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 8px ;
 }
 textarea {
   margin-top: 45px;
   font-size: 18px;
-  padding: 8px 8px;
+;
   width: 90%;
   height: 200px;
 }
@@ -346,6 +347,10 @@ li {
   .nav-link {
     display: none;
   }
+  h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 
   .menu-card {
     display: none;

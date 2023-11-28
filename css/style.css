@@ -369,6 +369,9 @@ li {
   .booking {
     flex-direction: column;
   }
+  .form-field{
+    margin: 10px;
+  }
   .footer-main {
     background-color: #000;
   }

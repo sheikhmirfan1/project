@@ -289,6 +289,7 @@ textarea {
   
 }
 .footer-logo {
+  margin-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -352,11 +353,6 @@ li {
   font-weight: 700;
 }
 
-  .menu-card {
-    display: none;
-  }
-  
-
   .booking-1 {
     
     display: flex;
@@ -379,6 +375,7 @@ li {
   }
   .footer-main {
     background-color: #000;
+    
   }
   textarea {
     margin-top: 45px;
